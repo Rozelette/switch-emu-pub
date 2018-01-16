@@ -1,0 +1,831 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\hle">
+      <UniqueIdentifier>{23306b64-9d81-4914-b4cf-a987343ff042}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\hle\kernel">
+      <UniqueIdentifier>{7703bb06-4140-47f4-98bb-a4636370f53d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\hle\kernel\loader">
+      <UniqueIdentifier>{238f9744-aecd-4fea-8029-f75fc2750066}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\debug">
+      <UniqueIdentifier>{565c971b-087a-4076-9bf9-eea95739945c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\debug">
+      <UniqueIdentifier>{8ffa24b0-b196-4881-b370-1f86503b52ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\hle">
+      <UniqueIdentifier>{93805f1d-8e92-4f1c-861d-42c7d9341b27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\hle\kernel">
+      <UniqueIdentifier>{f1b0409b-563e-4bd0-b16a-ca4efe0527aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\hle\kernel\loader">
+      <UniqueIdentifier>{7308d484-518e-41df-ae8f-86eb7b47de50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gpu">
+      <UniqueIdentifier>{8aed5bf7-7669-4693-aaa6-763b2b863ff1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gpu">
+      <UniqueIdentifier>{5a4259e4-1353-4b2e-b9ec-cfd41fa170f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\hle\SmService">
+      <UniqueIdentifier>{009b039e-52a1-41f0-9572-3638ea1f62ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\hle\nns">
+      <UniqueIdentifier>{e594f58e-6128-4804-87c5-b8b467ec77ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\hle\nn">
+      <UniqueIdentifier>{d4f06c78-98a6-4275-b459-275b7ac89ed1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\hle\nns\hosbinder">
+      <UniqueIdentifier>{e2965c3f-7837-473e-a758-6c424d71ea8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\hle\nns\nvdrv">
+      <UniqueIdentifier>{6ac994d5-a39d-458a-abe3-1a6d15376a23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\hle\nn\account">
+      <UniqueIdentifier>{cc7e8daa-375d-4566-92e9-5f1726f1cd49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\hle\nn\am">
+      <UniqueIdentifier>{f750eeb3-32a6-4062-874a-ebdd9b98914c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\hle\nn\aocsrv">
+      <UniqueIdentifier>{77b05e63-4caa-4284-b0a0-7803a31acfda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\hle\nn\apm">
+      <UniqueIdentifier>{f017e745-7ea7-4a1e-8c4b-2d550f87fb56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\hle\nn\fssrv">
+      <UniqueIdentifier>{94b86313-065e-4dd5-a5a7-74075385a509}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\hle\nn\hid">
+      <UniqueIdentifier>{1191cac6-f7e3-45b1-a753-93b9dce7df24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\hle\nn\lm">
+      <UniqueIdentifier>{477a0bfd-db68-4037-abfa-935002807498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\hle\nn\visrv">
+      <UniqueIdentifier>{612f5909-e2a4-4a45-abf4-f0da18d85a1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\hle\nn\timesrv">
+      <UniqueIdentifier>{ba123ef8-d892-4b47-a549-e3708248a6d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\hle\nn\settings">
+      <UniqueIdentifier>{0929cbcc-8334-4121-a95f-830fef490385}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\hle\nn\pctl">
+      <UniqueIdentifier>{265c6a08-e2e1-40c0-b0df-0749b8304af6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\hle\nn\nifm">
+      <UniqueIdentifier>{16aab70b-9f84-4d38-af47-74e7abacdf93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\hle\SmService">
+      <UniqueIdentifier>{f74aa189-d7e0-404d-8438-a1545652cb12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\hle\nns">
+      <UniqueIdentifier>{ac2fa1b4-abe3-4847-b9d5-ece72e1f8c80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\hle\nns\hosbinder">
+      <UniqueIdentifier>{c2157b07-913a-460b-bb10-01006e18adf1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\hle\nns\nvdrv">
+      <UniqueIdentifier>{463e9a1d-e4e2-4826-9e66-ac898d488caa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\hle\nn">
+      <UniqueIdentifier>{69b7e2c3-bd78-4ca4-ad28-8c20e69beef9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\hle\nn\account">
+      <UniqueIdentifier>{3d80925e-407c-4bbf-ad9f-505eb02ff159}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\hle\nn\am">
+      <UniqueIdentifier>{ae17a1e8-747a-42aa-af1a-3824a5150bc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\hle\nn\aocsrv">
+      <UniqueIdentifier>{92f25c7d-58a3-4ee9-a3b8-58ebf6bea128}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\hle\nn\apm">
+      <UniqueIdentifier>{a7e07994-7b59-4ba4-8402-d35b7cf7f0b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\hle\nn\fssrv">
+      <UniqueIdentifier>{da12b51d-da0d-4da4-b224-3099cc859d45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\hle\nn\hid">
+      <UniqueIdentifier>{dfd19d6b-fe55-45e0-9b2b-4943d6de7591}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\hle\nn\lm">
+      <UniqueIdentifier>{2123a324-1943-4eaf-adfb-e0b5fa4642a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\hle\nn\nifm">
+      <UniqueIdentifier>{18f553b1-7029-4b4d-b240-27e1395e8e60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\hle\nn\pctl">
+      <UniqueIdentifier>{9310bffa-df40-415d-9eae-f24b0719dfc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\hle\nn\settings">
+      <UniqueIdentifier>{9be1e52f-e3fd-463a-affb-b24d435919fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\hle\nn\timesrv">
+      <UniqueIdentifier>{fd4a15b3-3cc0-4f76-ab89-c406c1703b1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\hle\nn\visrv">
+      <UniqueIdentifier>{28230486-498e-4bd7-8119-b4460f45bef6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\hle\nn\time">
+      <UniqueIdentifier>{1df2cc80-fdaa-49f2-8a50-452d4c2d58ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\hle\nn\applet">
+      <UniqueIdentifier>{a4894d22-c29a-4b18-b585-37c16e3d7c3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\hle\nn\vi">
+      <UniqueIdentifier>{99118a22-0b6d-4a32-9e93-8b94637651de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\hle\kernel\types">
+      <UniqueIdentifier>{302eecb8-cad2-4b91-8162-1270649e9b08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\hle\kernel\types">
+      <UniqueIdentifier>{56e46501-3777-4a1c-9c68-eb2bdb6ec853}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\hle\nn\vi">
+      <UniqueIdentifier>{dc1afb05-e5af-462f-96c1-5008521c14a0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\emu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\graphicsDriver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\kernel.h">
+      <Filter>Header Files\hle\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\loader\nso.h">
+      <Filter>Header Files\hle\kernel\loader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\loader\nrr.h">
+      <Filter>Header Files\hle\kernel\loader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\loader\nro.h">
+      <Filter>Header Files\hle\kernel\loader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\loader\mod.h">
+      <Filter>Header Files\hle\kernel\loader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\loader\elf.h">
+      <Filter>Header Files\hle\kernel\loader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\loader\loader.h">
+      <Filter>Header Files\hle\kernel\loader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\svc.h">
+      <Filter>Header Files\hle</Filter>
+    </ClInclude>
+    <ClInclude Include="src\emu_input.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\thread.h">
+      <Filter>Header Files\hle\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\scheduler.h">
+      <Filter>Header Files\hle\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="src\debug\analysis.h">
+      <Filter>Header Files\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\ipc.h">
+      <Filter>Header Files\hle</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\npdm.h">
+      <Filter>Header Files\hle\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\memoryMapper.h">
+      <Filter>Header Files\hle\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\handleManager.h">
+      <Filter>Header Files\hle\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gpu\deviceInterface.h">
+      <Filter>Header Files\gpu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gpu\deviceHandleManager.h">
+      <Filter>Header Files\gpu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gpu\nvhostCtrlInterface.h">
+      <Filter>Header Files\gpu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gpu\nvhostCtrlGpuInterface.h">
+      <Filter>Header Files\gpu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gpu\nvmapInterface.h">
+      <Filter>Header Files\gpu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gpu\nvhostAsGpuInterface.h">
+      <Filter>Header Files\gpu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\debug\stackTrace.h">
+      <Filter>Header Files\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="src\debug\memDump.h">
+      <Filter>Header Files\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\error.h">
+      <Filter>Header Files\hle</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\SmService\SmService.h">
+      <Filter>Header Files\hle\SmService</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nns\nvdrv\INvDrvServices.h">
+      <Filter>Header Files\hle\nns\nvdrv</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nns\hosbinder\IHOSBinderDriver.h">
+      <Filter>Header Files\hle\nns\hosbinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\account\INotifier.h">
+      <Filter>Header Files\hle\nn\account</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\account\IProfile.h">
+      <Filter>Header Files\hle\nn\account</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\account\IAccountServiceForApplication.h">
+      <Filter>Header Files\hle\nn\account</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\am\IDisplayController.h">
+      <Filter>Header Files\hle\nn\am</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\am\ILibraryAppletCreator.h">
+      <Filter>Header Files\hle\nn\am</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\am\IProcessWindingController.h">
+      <Filter>Header Files\hle\nn\am</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\am\ISelfController.h">
+      <Filter>Header Files\hle\nn\am</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\am\IStorageAccessor.h">
+      <Filter>Header Files\hle\nn\am</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\am\IWindowController.h">
+      <Filter>Header Files\hle\nn\am</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\am\IApplicationFunctions.h">
+      <Filter>Header Files\hle\nn\am</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\am\IApplicationProxy.h">
+      <Filter>Header Files\hle\nn\am</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\am\IApplicationProxyService.h">
+      <Filter>Header Files\hle\nn\am</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\am\IAudioController.h">
+      <Filter>Header Files\hle\nn\am</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\am\ICommonStateGetter.h">
+      <Filter>Header Files\hle\nn\am</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\am\IDebugFunctions.h">
+      <Filter>Header Files\hle\nn\am</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\aocsrv\IAddOnContentManager.h">
+      <Filter>Header Files\hle\nn\aocsrv</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\apm\IManager.h">
+      <Filter>Header Files\hle\nn\apm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\apm\ISession.h">
+      <Filter>Header Files\hle\nn\apm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\fssrv\IStorage.h">
+      <Filter>Header Files\hle\nn\fssrv</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\fssrv\IFileSystemProxy.h">
+      <Filter>Header Files\hle\nn\fssrv</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\hid\IHidServer.h">
+      <Filter>Header Files\hle\nn\hid</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\hid\IAppletResource.h">
+      <Filter>Header Files\hle\nn\hid</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\lm\ILogService.h">
+      <Filter>Header Files\hle\nn\lm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\lm\ILogger.h">
+      <Filter>Header Files\hle\nn\lm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\nifm\IStaticService.h">
+      <Filter>Header Files\hle\nn\nifm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\nifm\IGeneralService.h">
+      <Filter>Header Files\hle\nn\nifm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\pctl\IParentalControlServiceFactory.h">
+      <Filter>Header Files\hle\nn\pctl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\settings\ISettingsServer.h">
+      <Filter>Header Files\hle\nn\settings</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\timesrv\ISteadyClock.h">
+      <Filter>Header Files\hle\nn\timesrv</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\timesrv\ISystemClock.h">
+      <Filter>Header Files\hle\nn\timesrv</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\timesrv\ITimeZoneService.h">
+      <Filter>Header Files\hle\nn\timesrv</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\timesrv\IStaticService.h">
+      <Filter>Header Files\hle\nn\timesrv</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\visrv\IManagerDisplayService.h">
+      <Filter>Header Files\hle\nn\visrv</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\visrv\IManagerRootService.h">
+      <Filter>Header Files\hle\nn\visrv</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\visrv\ISystemDisplayService.h">
+      <Filter>Header Files\hle\nn\visrv</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\visrv\IApplicationDisplayService.h">
+      <Filter>Header Files\hle\nn\visrv</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\service.h">
+      <Filter>Header Files\hle</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\am\IStorage.h">
+      <Filter>Header Files\hle\nn\am</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\account\IManagerForApplication.h">
+      <Filter>Header Files\hle\nn\account</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\time\time.h">
+      <Filter>Header Files\hle\nn\time</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\account\profile.h">
+      <Filter>Header Files\hle\nn\account</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\applet\applet.h">
+      <Filter>Header Files\hle\nn\applet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\am\am.h">
+      <Filter>Header Files\hle\nn\am</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\settings\settings.h">
+      <Filter>Header Files\hle\nn\settings</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\apm\apm.h">
+      <Filter>Header Files\hle\nn\apm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\hid\hid.h">
+      <Filter>Header Files\hle\nn\hid</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\vi\vi.h">
+      <Filter>Header Files\hle\nn\vi</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KClientPort.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KClientSession.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KDebug.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KDeviceAddressSpace.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KEvent.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KHandleEntry.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KInterruptEvent.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KLightClientSession.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KLightServerSession.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KLightSession.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KLinkedListNode.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KLockedList.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KMemoryBlock.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KMemoryBlockInfo.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KMemoryBlockList.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KMemoryManager.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KMutex.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KPort.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KProcess.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KProcessCapabilities.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KProcessHandleTable.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KReadableEvent.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KRecursiveLock.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KResourceLimit.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KServerPort.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KServerSession.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KSession.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KSharedMemory.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KSmmuManager.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KSpinLock.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KSynchronizationObject.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KThread.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KTransferMemory.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KWritableEvent.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KAutoObject.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KDebugEvent.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KPageTable.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KMemoryBlockManager.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KProcessScheduler.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KSharedMemoryRef.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KInterruptReceiver.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KSessionRequest.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KBufferDescriptor.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KPoolManager.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KPoolAllocator.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KPartitionInfo.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KPool.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KPoolRefManager.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KObjectAllocator.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KSlabHeap.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KPageTableAllocator.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KIrqManager.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KIrqEntry.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KPoolHeader.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\clock.h">
+      <Filter>Header Files\hle\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\alarm.h">
+      <Filter>Header Files\hle\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\time.h">
+      <Filter>Header Files\hle\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="src\debug\debug.h">
+      <Filter>Header Files\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="src\debug\debugUI.h">
+      <Filter>Header Files\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="src\debug\debugUIWindow.h">
+      <Filter>Header Files\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="src\debug\debugUIWindowCoreState.h">
+      <Filter>Header Files\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="src\debug\debugUIWindowDisassembler.h">
+      <Filter>Header Files\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="src\debug\debugUIWindowMemory.h">
+      <Filter>Header Files\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KLinkedList.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KTlsPageManager.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\visrv\ISystemRootService.h">
+      <Filter>Header Files\hle\nn\visrv</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\visrv\IApplicationRootService.h">
+      <Filter>Header Files\hle\nn\visrv</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KLinkedListEntry.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gpu\nvhostGpuInterface.h">
+      <Filter>Header Files\gpu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\am\IAllSystemAppletProxiesService.h">
+      <Filter>Header Files\hle\nn\am</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\am\ILibraryAppletProxy.h">
+      <Filter>Header Files\hle\nn\am</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\types\KJitMemory.h">
+      <Filter>Header Files\hle\kernel\types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\kernel\handle.h">
+      <Filter>Header Files\hle\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hle\nn\vi\Display.h">
+      <Filter>Header Files\hle\nn\vi</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\emu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphicsDriver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\kernel\kernel.cpp">
+      <Filter>Source Files\hle\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\kernel\loader\loader.cpp">
+      <Filter>Source Files\hle\kernel\loader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\svc.cpp">
+      <Filter>Source Files\hle</Filter>
+    </ClCompile>
+    <ClCompile Include="src\emu_input.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\kernel\thread.cpp">
+      <Filter>Source Files\hle\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\kernel\scheduler.cpp">
+      <Filter>Source Files\hle\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\debug\analysis.cpp">
+      <Filter>Source Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\kernel\handleManager.cpp">
+      <Filter>Source Files\hle\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\ipc.cpp">
+      <Filter>Source Files\hle</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gpu\deviceHandleManager.cpp">
+      <Filter>Source Files\gpu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gpu\nvhostCtrlInterface.cpp">
+      <Filter>Source Files\gpu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gpu\deviceInterface.cpp">
+      <Filter>Source Files\gpu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gpu\nvhostCtrlGpuInterface.cpp">
+      <Filter>Source Files\gpu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gpu\nvmapInterface.cpp">
+      <Filter>Source Files\gpu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gpu\nvhostAsGpuInterface.cpp">
+      <Filter>Source Files\gpu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\debug\stackTrace.cpp">
+      <Filter>Source Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="src\debug\memDump.cpp">
+      <Filter>Source Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\kernel\memoryMapper.cpp">
+      <Filter>Source Files\hle\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\SmService\SmService.cpp">
+      <Filter>Source Files\hle\SmService</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\nns\nvdrv\INvDrvServices.cpp">
+      <Filter>Source Files\hle\nns\nvdrv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\nn\account\IAccountServiceForApplication.cpp">
+      <Filter>Source Files\hle\nn\account</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\nn\account\IProfile.cpp">
+      <Filter>Source Files\hle\nn\account</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\nn\visrv\IApplicationDisplayService.cpp">
+      <Filter>Source Files\hle\nn\visrv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\nn\visrv\IManagerRootService.cpp">
+      <Filter>Source Files\hle\nn\visrv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\nn\timesrv\ISystemClock.cpp">
+      <Filter>Source Files\hle\nn\timesrv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\nn\timesrv\ITimeZoneService.cpp">
+      <Filter>Source Files\hle\nn\timesrv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\nn\settings\ISettingsServer.cpp">
+      <Filter>Source Files\hle\nn\settings</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\nn\pctl\IParentalControlServiceFactory.cpp">
+      <Filter>Source Files\hle\nn\pctl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\nn\lm\ILogger.cpp">
+      <Filter>Source Files\hle\nn\lm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\nn\lm\ILogService.cpp">
+      <Filter>Source Files\hle\nn\lm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\nn\hid\IAppletResource.cpp">
+      <Filter>Source Files\hle\nn\hid</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\nn\hid\IHidServer.cpp">
+      <Filter>Source Files\hle\nn\hid</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\nn\fssrv\IFileSystemProxy.cpp">
+      <Filter>Source Files\hle\nn\fssrv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\nn\apm\IManager.cpp">
+      <Filter>Source Files\hle\nn\apm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\nn\apm\ISession.cpp">
+      <Filter>Source Files\hle\nn\apm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\nn\aocsrv\IAddOnContentManager.cpp">
+      <Filter>Source Files\hle\nn\aocsrv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\nn\am\IApplicationFunctions.cpp">
+      <Filter>Source Files\hle\nn\am</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\nn\am\IApplicationProxy.cpp">
+      <Filter>Source Files\hle\nn\am</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\nn\am\IApplicationProxyService.cpp">
+      <Filter>Source Files\hle\nn\am</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\nn\am\ICommonStateGetter.cpp">
+      <Filter>Source Files\hle\nn\am</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\nn\am\ISelfController.cpp">
+      <Filter>Source Files\hle\nn\am</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\nn\am\IStorageAccessor.cpp">
+      <Filter>Source Files\hle\nn\am</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\nn\am\IWindowController.cpp">
+      <Filter>Source Files\hle\nn\am</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\service.cpp">
+      <Filter>Source Files\hle</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\nn\am\IStorage_am.cpp">
+      <Filter>Source Files\hle\nn\am</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\nn\fssrv\IStorage_fssrv.cpp">
+      <Filter>Source Files\hle\nn\fssrv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\nn\timesrv\IStaticService_timesrv.cpp">
+      <Filter>Source Files\hle\nn\timesrv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\nn\nifm\IStaticService_nifm.cpp">
+      <Filter>Source Files\hle\nn\nifm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\kernel\clock.cpp">
+      <Filter>Source Files\hle\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\kernel\alarm.cpp">
+      <Filter>Source Files\hle\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\kernel\time.cpp">
+      <Filter>Source Files\hle\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\debug\debug.cpp">
+      <Filter>Source Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="src\debug\debugUI.cpp">
+      <Filter>Source Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="src\debug\debugUIWindowCoreState.cpp">
+      <Filter>Source Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="src\debug\debugUIWindowDisassembler.cpp">
+      <Filter>Source Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="src\debug\debugUIWindowMemory.cpp">
+      <Filter>Source Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\kernel\types\KProcess.cpp">
+      <Filter>Source Files\hle\kernel\types</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\nn\visrv\ISystemRootService.cpp">
+      <Filter>Source Files\hle\nn\visrv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\nns\hosbinder\IHOSBinderDriver.cpp">
+      <Filter>Source Files\hle\nns\hosbinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gpu\nvhostGpuInterface.cpp">
+      <Filter>Source Files\gpu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\nn\am\IAllSystemAppletProxiesService.cpp">
+      <Filter>Source Files\hle\nn\am</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\nn\am\ILibraryAppletProxy.cpp">
+      <Filter>Source Files\hle\nn\am</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\nn\visrv\IManagerDisplayService.cpp">
+      <Filter>Source Files\hle\nn\visrv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\nn\visrv\ISystemDisplayService.cpp">
+      <Filter>Source Files\hle\nn\visrv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\kernel\types\KTransferMemory.cpp">
+      <Filter>Source Files\hle\kernel\types</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hle\nn\vi\display.cpp">
+      <Filter>Source Files\hle\nn\vi</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

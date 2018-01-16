@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\decode">
+      <UniqueIdentifier>{211258e1-cf4e-43fa-ae9a-973edf79b766}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\disassembler">
+      <UniqueIdentifier>{22f84c1e-0e1e-413c-972c-e7ab5f388766}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\interpreter">
+      <UniqueIdentifier>{82fb50c2-7fda-41b3-bcfa-979461e942be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\jit">
+      <UniqueIdentifier>{129ab386-dac9-41f5-9c67-655ffd40403b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\decode">
+      <UniqueIdentifier>{3dd9ffd0-5c3c-4a97-a651-aa4072462318}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\disassembler">
+      <UniqueIdentifier>{5fedacf5-4074-4c32-a99c-60d8d3051709}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\interpreter">
+      <UniqueIdentifier>{cf5c30e8-2d61-4876-8e2e-42090cc1d7e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\jit">
+      <UniqueIdentifier>{8656ab0a-cf5c-48cb-a83e-19178c6f624f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\meta">
+      <UniqueIdentifier>{26c44a60-9e3c-44d5-aae6-7104b95d7369}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\meta">
+      <UniqueIdentifier>{c63e6599-4846-4324-b627-a7dafea36c9a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\interpreter\interpreter.h">
+      <Filter>Header Files\interpreter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\interpreter\interpreterRegister.h">
+      <Filter>Header Files\interpreter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\jit\jitVerify.h">
+      <Filter>Header Files\jit</Filter>
+    </ClInclude>
+    <ClInclude Include="src\jit\jit.h">
+      <Filter>Header Files\jit</Filter>
+    </ClInclude>
+    <ClInclude Include="src\jit\jitRegister.h">
+      <Filter>Header Files\jit</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\cpu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\encode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\instruction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\instructionTable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\mem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\decode.h">
+      <Filter>Header Files\decode</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\disassembler.h">
+      <Filter>Header Files\disassembler</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\meta.h">
+      <Filter>Header Files\meta</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\instutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\jitStats.h">
+      <Filter>Header Files\jit</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\cpu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\encode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\jit\jitVerify.cpp">
+      <Filter>Source Files\jit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\jit\jit.cpp">
+      <Filter>Source Files\jit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\jit\jitBranch.cpp">
+      <Filter>Source Files\jit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\jit\jitDataProcessingImm.cpp">
+      <Filter>Source Files\jit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\jit\jitDataProcessingReg.cpp">
+      <Filter>Source Files\jit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\jit\jitFloat.cpp">
+      <Filter>Source Files\jit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\jit\jitLoadStore.cpp">
+      <Filter>Source Files\jit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\jit\jitSystem.cpp">
+      <Filter>Source Files\jit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\decode\decode.cpp">
+      <Filter>Source Files\decode</Filter>
+    </ClCompile>
+    <ClCompile Include="src\decode\decodeDPImm.cpp">
+      <Filter>Source Files\decode</Filter>
+    </ClCompile>
+    <ClCompile Include="src\decode\decodeDPReg.cpp">
+      <Filter>Source Files\decode</Filter>
+    </ClCompile>
+    <ClCompile Include="src\decode\decodeFloat.cpp">
+      <Filter>Source Files\decode</Filter>
+    </ClCompile>
+    <ClCompile Include="src\decode\decodeLoadStore.cpp">
+      <Filter>Source Files\decode</Filter>
+    </ClCompile>
+    <ClCompile Include="src\decode\decodeSIMD.cpp">
+      <Filter>Source Files\decode</Filter>
+    </ClCompile>
+    <ClCompile Include="src\decode\decodeSystem.cpp">
+      <Filter>Source Files\decode</Filter>
+    </ClCompile>
+    <ClCompile Include="src\disassembler\disassembler.cpp">
+      <Filter>Source Files\disassembler</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interpreter\Branch.cpp">
+      <Filter>Source Files\interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interpreter\DataProcessingImm.cpp">
+      <Filter>Source Files\interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interpreter\DataProcessingReg.cpp">
+      <Filter>Source Files\interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interpreter\float.cpp">
+      <Filter>Source Files\interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interpreter\simd.cpp">
+      <Filter>Source Files\interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interpreter\System.cpp">
+      <Filter>Source Files\interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interpreter\LoadStore.cpp">
+      <Filter>Source Files\interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interpreter\interpreter.cpp">
+      <Filter>Source Files\interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\meta\meta.cpp">
+      <Filter>Source Files\meta</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="inc\instruction_aliases.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="inc\instructions.inl">
+      <Filter>Header Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

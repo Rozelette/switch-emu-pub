@@ -1,0 +1,401 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4F3123A8-9D3E-4F92-AAE2-0438761FA3B4}</ProjectGuid>
+    <RootNamespace>switchemu</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)common\inc;$(SolutionDir)libcpu\inc;$(SolutionDir)libraries\glbinding\source\glbinding\include;$(ProjectDir)src\;$(SolutionDir)libraries\</AdditionalIncludeDirectories>
+      <AdditionalOptions>/wd4251 /wd4819 /wd4201 /wd4100 -D_SILENCE_CXX17_ADAPTOR_TYPEDEFS_DEPRECATION_WARNING %(AdditionalOptions)</AdditionalOptions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>ASMJIT_STATIC;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <EnablePREfast>false</EnablePREfast>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(SolutionDir)bin\$(Platform)_$(Configuration)\imgui.lib;$(SolutionDir)bin\$(Platform)_$(Configuration)\asmjit.lib;$(SolutionDir)bin\$(Platform)_$(Configuration)\liblz4_static.lib;glbinding.lib;$(SolutionDir)bin\$(Platform)_$(Configuration)\SDL2.lib;$(SolutionDir)bin\$(Platform)_$(Configuration)\SDL2main.lib;$(SolutionDir)$(Platform)\$(Configuration)\libcpu.lib;$(SolutionDir)$(Platform)\$(Configuration)\common.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)common\inc;$(SolutionDir)libcpu\inc;$(SolutionDir)libraries\glbinding\source\glbinding\include;$(ProjectDir)src\;$(SolutionDir)libraries\</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>ASMJIT_STATIC;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/wd4251 /wd4819 /wd4201 /wd4100 -D_SILENCE_CXX17_ADAPTOR_TYPEDEFS_DEPRECATION_WARNING %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <EnablePREfast>false</EnablePREfast>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>$(SolutionDir)bin\$(Platform)_$(Configuration)\imgui.lib;$(SolutionDir)bin\$(Platform)_$(Configuration)\asmjit.lib;$(SolutionDir)bin\$(Platform)_$(Configuration)\liblz4_static.lib;glbinding.lib;$(SolutionDir)bin\$(Platform)_$(Configuration)\SDL2.lib;$(SolutionDir)bin\$(Platform)_$(Configuration)\SDL2main.lib;$(SolutionDir)$(Platform)\$(Configuration)\libcpu.lib;$(SolutionDir)$(Platform)\$(Configuration)\common.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="src\debug\analysis.h" />
+    <ClInclude Include="src\debug\debug.h" />
+    <ClInclude Include="src\debug\debugUI.h" />
+    <ClInclude Include="src\debug\debugUIWindow.h" />
+    <ClInclude Include="src\debug\debugUIWindowCoreState.h" />
+    <ClInclude Include="src\debug\debugUIWindowDisassembler.h" />
+    <ClInclude Include="src\debug\debugUIWindowMemory.h" />
+    <ClInclude Include="src\debug\memDump.h" />
+    <ClInclude Include="src\debug\stackTrace.h" />
+    <ClInclude Include="src\emu_input.h" />
+    <ClInclude Include="src\gpu\deviceHandleManager.h" />
+    <ClInclude Include="src\gpu\deviceInterface.h" />
+    <ClInclude Include="src\gpu\nvhostAsGpuInterface.h" />
+    <ClInclude Include="src\gpu\nvhostCtrlGpuInterface.h" />
+    <ClInclude Include="src\gpu\nvhostCtrlInterface.h" />
+    <ClInclude Include="src\gpu\nvhostGpuInterface.h" />
+    <ClInclude Include="src\gpu\nvmapInterface.h" />
+    <ClInclude Include="src\hle\error.h" />
+    <ClInclude Include="src\hle\ipc.h" />
+    <ClInclude Include="src\hle\kernel\alarm.h" />
+    <ClInclude Include="src\hle\kernel\clock.h" />
+    <ClInclude Include="src\hle\kernel\handle.h" />
+    <ClInclude Include="src\hle\kernel\handleManager.h" />
+    <ClInclude Include="src\hle\kernel\loader\elf.h" />
+    <ClInclude Include="src\emu.h" />
+    <ClInclude Include="src\graphicsDriver.h" />
+    <ClInclude Include="src\hle\kernel\kernel.h" />
+    <ClInclude Include="src\hle\kernel\loader\loader.h" />
+    <ClInclude Include="src\hle\kernel\memoryMapper.h" />
+    <ClInclude Include="src\hle\kernel\npdm.h" />
+    <ClInclude Include="src\hle\kernel\scheduler.h" />
+    <ClInclude Include="src\hle\kernel\thread.h" />
+    <ClInclude Include="src\hle\kernel\time.h" />
+    <ClInclude Include="src\hle\kernel\types\KAutoObject.h" />
+    <ClInclude Include="src\hle\kernel\types\KBufferDescriptor.h" />
+    <ClInclude Include="src\hle\kernel\types\KClientPort.h" />
+    <ClInclude Include="src\hle\kernel\types\KClientSession.h" />
+    <ClInclude Include="src\hle\kernel\types\KDebug.h" />
+    <ClInclude Include="src\hle\kernel\types\KDebugEvent.h" />
+    <ClInclude Include="src\hle\kernel\types\KDeviceAddressSpace.h" />
+    <ClInclude Include="src\hle\kernel\types\KEvent.h" />
+    <ClInclude Include="src\hle\kernel\types\KHandleEntry.h" />
+    <ClInclude Include="src\hle\kernel\types\KInterruptEvent.h" />
+    <ClInclude Include="src\hle\kernel\types\KInterruptReceiver.h" />
+    <ClInclude Include="src\hle\kernel\types\KIrqEntry.h" />
+    <ClInclude Include="src\hle\kernel\types\KIrqManager.h" />
+    <ClInclude Include="src\hle\kernel\types\KJitMemory.h" />
+    <ClInclude Include="src\hle\kernel\types\KLightClientSession.h" />
+    <ClInclude Include="src\hle\kernel\types\KLightServerSession.h" />
+    <ClInclude Include="src\hle\kernel\types\KLightSession.h" />
+    <ClInclude Include="src\hle\kernel\types\KLinkedList.h" />
+    <ClInclude Include="src\hle\kernel\types\KLinkedListNode.h" />
+    <ClInclude Include="src\hle\kernel\types\KLinkedListEntry.h" />
+    <ClInclude Include="src\hle\kernel\types\KLockedList.h" />
+    <ClInclude Include="src\hle\kernel\types\KMemoryBlock.h" />
+    <ClInclude Include="src\hle\kernel\types\KMemoryBlockInfo.h" />
+    <ClInclude Include="src\hle\kernel\types\KMemoryBlockList.h" />
+    <ClInclude Include="src\hle\kernel\types\KMemoryBlockManager.h" />
+    <ClInclude Include="src\hle\kernel\types\KMemoryManager.h" />
+    <ClInclude Include="src\hle\kernel\types\KMutex.h" />
+    <ClInclude Include="src\hle\kernel\types\KObjectAllocator.h" />
+    <ClInclude Include="src\hle\kernel\types\KPageTable.h" />
+    <ClInclude Include="src\hle\kernel\types\KPageTableAllocator.h" />
+    <ClInclude Include="src\hle\kernel\types\KPartitionInfo.h" />
+    <ClInclude Include="src\hle\kernel\types\KPool.h" />
+    <ClInclude Include="src\hle\kernel\types\KPoolAllocator.h" />
+    <ClInclude Include="src\hle\kernel\types\KPoolHeader.h" />
+    <ClInclude Include="src\hle\kernel\types\KPoolManager.h" />
+    <ClInclude Include="src\hle\kernel\types\KPoolRefManager.h" />
+    <ClInclude Include="src\hle\kernel\types\KPort.h" />
+    <ClInclude Include="src\hle\kernel\types\KProcess.h" />
+    <ClInclude Include="src\hle\kernel\types\KProcessCapabilities.h" />
+    <ClInclude Include="src\hle\kernel\types\KProcessHandleTable.h" />
+    <ClInclude Include="src\hle\kernel\types\KProcessScheduler.h" />
+    <ClInclude Include="src\hle\kernel\types\KReadableEvent.h" />
+    <ClInclude Include="src\hle\kernel\types\KRecursiveLock.h" />
+    <ClInclude Include="src\hle\kernel\types\KResourceLimit.h" />
+    <ClInclude Include="src\hle\kernel\types\KServerPort.h" />
+    <ClInclude Include="src\hle\kernel\types\KServerSession.h" />
+    <ClInclude Include="src\hle\kernel\types\KSession.h" />
+    <ClInclude Include="src\hle\kernel\types\KSessionRequest.h" />
+    <ClInclude Include="src\hle\kernel\types\KSharedMemory.h" />
+    <ClInclude Include="src\hle\kernel\types\KSharedMemoryRef.h" />
+    <ClInclude Include="src\hle\kernel\types\KSlabHeap.h" />
+    <ClInclude Include="src\hle\kernel\types\KSmmuManager.h" />
+    <ClInclude Include="src\hle\kernel\types\KSpinLock.h" />
+    <ClInclude Include="src\hle\kernel\types\KSynchronizationObject.h" />
+    <ClInclude Include="src\hle\kernel\types\KThread.h" />
+    <ClInclude Include="src\hle\kernel\types\KTlsPageManager.h" />
+    <ClInclude Include="src\hle\kernel\types\KTransferMemory.h" />
+    <ClInclude Include="src\hle\kernel\types\KWritableEvent.h" />
+    <ClInclude Include="src\hle\nns\hosbinder\IHOSBinderDriver.h" />
+    <ClInclude Include="src\hle\nns\nvdrv\INvDrvServices.h" />
+    <ClInclude Include="src\hle\nn\account\IAccountServiceForApplication.h" />
+    <ClInclude Include="src\hle\nn\account\IManagerForApplication.h" />
+    <ClInclude Include="src\hle\nn\account\INotifier.h" />
+    <ClInclude Include="src\hle\nn\account\IProfile.h" />
+    <ClInclude Include="src\hle\nn\account\profile.h" />
+    <ClInclude Include="src\hle\nn\am\am.h" />
+    <ClInclude Include="src\hle\nn\am\IAllSystemAppletProxiesService.h" />
+    <ClInclude Include="src\hle\nn\am\IApplicationFunctions.h" />
+    <ClInclude Include="src\hle\nn\am\IApplicationProxy.h" />
+    <ClInclude Include="src\hle\nn\am\IApplicationProxyService.h" />
+    <ClInclude Include="src\hle\nn\am\IAudioController.h" />
+    <ClInclude Include="src\hle\nn\am\ICommonStateGetter.h" />
+    <ClInclude Include="src\hle\nn\am\IDebugFunctions.h" />
+    <ClInclude Include="src\hle\nn\am\IDisplayController.h" />
+    <ClInclude Include="src\hle\nn\am\ILibraryAppletCreator.h" />
+    <ClInclude Include="src\hle\nn\am\ILibraryAppletProxy.h" />
+    <ClInclude Include="src\hle\nn\am\IProcessWindingController.h" />
+    <ClInclude Include="src\hle\nn\am\ISelfController.h" />
+    <ClInclude Include="src\hle\nn\am\IStorage.h" />
+    <ClInclude Include="src\hle\nn\am\IStorageAccessor.h" />
+    <ClInclude Include="src\hle\nn\am\IWindowController.h" />
+    <ClInclude Include="src\hle\nn\aocsrv\IAddOnContentManager.h" />
+    <ClInclude Include="src\hle\nn\apm\apm.h" />
+    <ClInclude Include="src\hle\nn\apm\IManager.h" />
+    <ClInclude Include="src\hle\nn\apm\ISession.h" />
+    <ClInclude Include="src\hle\nn\applet\applet.h" />
+    <ClInclude Include="src\hle\nn\fssrv\IFileSystemProxy.h" />
+    <ClInclude Include="src\hle\nn\fssrv\IStorage.h" />
+    <ClInclude Include="src\hle\nn\hid\hid.h" />
+    <ClInclude Include="src\hle\nn\hid\IAppletResource.h" />
+    <ClInclude Include="src\hle\nn\hid\IHidServer.h" />
+    <ClInclude Include="src\hle\nn\lm\ILogger.h" />
+    <ClInclude Include="src\hle\nn\lm\ILogService.h" />
+    <ClInclude Include="src\hle\nn\nifm\IGeneralService.h" />
+    <ClInclude Include="src\hle\nn\nifm\IStaticService.h" />
+    <ClInclude Include="src\hle\nn\pctl\IParentalControlServiceFactory.h" />
+    <ClInclude Include="src\hle\nn\settings\ISettingsServer.h" />
+    <ClInclude Include="src\hle\nn\settings\settings.h" />
+    <ClInclude Include="src\hle\nn\timesrv\IStaticService.h" />
+    <ClInclude Include="src\hle\nn\timesrv\ISteadyClock.h" />
+    <ClInclude Include="src\hle\nn\timesrv\ISystemClock.h" />
+    <ClInclude Include="src\hle\nn\timesrv\ITimeZoneService.h" />
+    <ClInclude Include="src\hle\nn\time\time.h" />
+    <ClInclude Include="src\hle\nn\visrv\IApplicationDisplayService.h" />
+    <ClInclude Include="src\hle\nn\visrv\IApplicationRootService.h" />
+    <ClInclude Include="src\hle\nn\visrv\IManagerDisplayService.h" />
+    <ClInclude Include="src\hle\nn\visrv\IManagerRootService.h" />
+    <ClInclude Include="src\hle\nn\visrv\ISystemDisplayService.h" />
+    <ClInclude Include="src\hle\nn\visrv\ISystemRootService.h" />
+    <ClInclude Include="src\hle\nn\vi\Display.h" />
+    <ClInclude Include="src\hle\nn\vi\vi.h" />
+    <ClInclude Include="src\hle\service.h" />
+    <ClCompile Include="src\debug\debugUIWindowCoreState.cpp" />
+    <ClCompile Include="src\debug\debugUIWindowDisassembler.cpp" />
+    <ClCompile Include="src\debug\debugUIWindowMemory.cpp" />
+    <ClCompile Include="src\debug\memDump.cpp" />
+    <ClCompile Include="src\debug\stackTrace.cpp" />
+    <ClCompile Include="src\gpu\deviceHandleManager.cpp" />
+    <ClCompile Include="src\gpu\deviceInterface.cpp" />
+    <ClCompile Include="src\gpu\nvhostAsGpuInterface.cpp" />
+    <ClCompile Include="src\gpu\nvhostCtrlGpuInterface.cpp" />
+    <ClCompile Include="src\gpu\nvhostCtrlInterface.cpp" />
+    <ClCompile Include="src\gpu\nvhostGpuInterface.cpp" />
+    <ClCompile Include="src\gpu\nvmapInterface.cpp" />
+    <ClCompile Include="src\hle\kernel\alarm.cpp" />
+    <ClCompile Include="src\hle\kernel\clock.cpp" />
+    <ClCompile Include="src\hle\kernel\time.cpp" />
+    <ClCompile Include="src\hle\kernel\types\KProcess.cpp" />
+    <ClCompile Include="src\hle\kernel\types\KTransferMemory.cpp" />
+    <ClCompile Include="src\hle\nns\hosbinder\IHOSBinderDriver.cpp" />
+    <ClCompile Include="src\hle\nns\nvdrv\INvDrvServices.cpp" />
+    <ClCompile Include="src\hle\nn\account\IAccountServiceForApplication.cpp" />
+    <ClCompile Include="src\hle\nn\account\IProfile.cpp" />
+    <ClCompile Include="src\hle\nn\am\IAllSystemAppletProxiesService.cpp" />
+    <ClCompile Include="src\hle\nn\am\IApplicationFunctions.cpp" />
+    <ClCompile Include="src\hle\nn\am\IApplicationProxy.cpp" />
+    <ClCompile Include="src\hle\nn\am\IApplicationProxyService.cpp" />
+    <ClCompile Include="src\hle\nn\am\ICommonStateGetter.cpp" />
+    <ClCompile Include="src\hle\nn\am\ILibraryAppletProxy.cpp" />
+    <ClCompile Include="src\hle\nn\am\ISelfController.cpp" />
+    <ClCompile Include="src\hle\nn\am\IStorage_am.cpp" />
+    <ClCompile Include="src\hle\nn\am\IStorageAccessor.cpp" />
+    <ClCompile Include="src\hle\nn\am\IWindowController.cpp" />
+    <ClCompile Include="src\hle\nn\aocsrv\IAddOnContentManager.cpp" />
+    <ClCompile Include="src\hle\nn\apm\IManager.cpp" />
+    <ClCompile Include="src\hle\nn\apm\ISession.cpp" />
+    <ClCompile Include="src\hle\nn\fssrv\IFileSystemProxy.cpp" />
+    <ClCompile Include="src\hle\nn\fssrv\IStorage_fssrv.cpp" />
+    <ClCompile Include="src\hle\nn\hid\IAppletResource.cpp" />
+    <ClCompile Include="src\hle\nn\hid\IHidServer.cpp" />
+    <ClCompile Include="src\hle\nn\lm\ILogger.cpp" />
+    <ClCompile Include="src\hle\nn\lm\ILogService.cpp" />
+    <ClCompile Include="src\hle\nn\nifm\IStaticService_nifm.cpp" />
+    <ClCompile Include="src\hle\nn\pctl\IParentalControlServiceFactory.cpp" />
+    <ClCompile Include="src\hle\nn\settings\ISettingsServer.cpp" />
+    <ClCompile Include="src\hle\nn\timesrv\IStaticService_timesrv.cpp" />
+    <ClCompile Include="src\hle\nn\timesrv\ISystemClock.cpp" />
+    <ClCompile Include="src\hle\nn\timesrv\ITimeZoneService.cpp" />
+    <ClCompile Include="src\hle\nn\visrv\IApplicationDisplayService.cpp" />
+    <ClCompile Include="src\hle\nn\visrv\IManagerDisplayService.cpp" />
+    <ClCompile Include="src\hle\nn\visrv\IManagerRootService.cpp" />
+    <ClCompile Include="src\hle\nn\visrv\ISystemDisplayService.cpp" />
+    <ClCompile Include="src\hle\nn\visrv\ISystemRootService.cpp" />
+    <ClCompile Include="src\hle\nn\vi\display.cpp" />
+    <ClCompile Include="src\hle\service.cpp" />
+    <ClInclude Include="src\hle\SmService\SmService.h" />
+    <ClInclude Include="src\hle\svc.h" />
+    <ClInclude Include="src\hle\kernel\loader\mod.h" />
+    <ClInclude Include="src\hle\kernel\loader\nro.h" />
+    <ClInclude Include="src\hle\kernel\loader\nrr.h" />
+    <ClInclude Include="src\hle\kernel\loader\nso.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\debug\analysis.cpp" />
+    <ClCompile Include="src\debug\debug.cpp" />
+    <ClCompile Include="src\debug\debugUI.cpp" />
+    <ClCompile Include="src\emu.cpp" />
+    <ClCompile Include="src\emu_input.cpp" />
+    <ClCompile Include="src\graphicsDriver.cpp" />
+    <ClCompile Include="src\hle\ipc.cpp" />
+    <ClCompile Include="src\hle\kernel\handleManager.cpp" />
+    <ClCompile Include="src\hle\kernel\kernel.cpp" />
+    <ClCompile Include="src\hle\kernel\loader\loader.cpp" />
+    <ClCompile Include="src\hle\kernel\memoryMapper.cpp" />
+    <ClCompile Include="src\hle\kernel\scheduler.cpp" />
+    <ClCompile Include="src\hle\kernel\thread.cpp" />
+    <ClCompile Include="src\hle\SmService\SmService.cpp" />
+    <ClCompile Include="src\hle\svc.cpp" />
+    <ClCompile Include="src\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\common\common.vcxproj">
+      <Project>{dc90d934-0861-4aff-8690-74a248cbc5ea}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\libcpu\libcpu.vcxproj">
+      <Project>{b1794f8e-f93a-4b57-beeb-ad1f16fe09af}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\proj\asmjit\asmjit.vcxproj">
+      <Project>{7dbbd97f-6df3-4c2c-92a7-17221c29e9c8}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\proj\imgui\imgui.vcxproj">
+      <Project>{27ea3142-6611-4a38-9355-c4b3a3d27cca}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\proj\lz4\liblz4.vcxproj">
+      <Project>{9092c5cc-3e71-41b3-bf68-4a7bdd8a5476}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\proj\SDLmain\SDLmain.vcxproj">
+      <Project>{da956fd3-e142-46f2-9dd5-c78bebb56b7a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\proj\SDL\SDL.vcxproj">
+      <Project>{81ce8daf-ebb2-4761-8e45-b71abcca8c68}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

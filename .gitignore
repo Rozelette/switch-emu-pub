@@ -1,0 +1,10 @@
+.vs/* 
+bin/*
+*.sdf
+*.db
+*.psess
+*.user
+/**/x64/*
+/**/*.ini
+/**/*.bin
+*.lib

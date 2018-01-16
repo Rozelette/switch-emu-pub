@@ -1,0 +1,18 @@
+[submodule "libraries/lz4"]
+	path = libraries/lz4
+	url = https://github.com/lz4/lz4/
+[submodule "libraries/glbinding"]
+	path = libraries/glbinding
+	url = https://github.com/cginternals/glbinding
+[submodule "libraries/imgui"]
+	path = libraries/imgui
+	url = https://github.com/ocornut/imgui
+[submodule "libraries/asmjit"]
+	path = libraries/asmjit
+	url = https://github.com/asmjit/asmjit.git
+[submodule "libraries/SDL"]
+	path = libraries/SDL
+	url = https://github.com/spurious/SDL-mirror.git
+[submodule "libraries/libnx"]
+	path = libraries/libnx
+	url = https://github.com/switchbrew/libnx.git
